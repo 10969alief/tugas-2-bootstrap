@@ -1,0 +1,131 @@
+/* Base Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.profile-section {
+    background-image: url('sigma.jpeg');
+    background-color: rgba(255, 255, 255, 0.7); /* transparency layer */
+    color: rgb(0, 6, 9);
+    padding: 50px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.section-header {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #0385f7;
+    display: inline-block;
+    padding-bottom: 5px;
+    color: #0385f7;
+}
+
+/* Card Styling */
+.info-card {
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover transition */
+}
+
+/* Hover Effect for Card */
+.info-card:hover {
+    transform: translateY(-10px); /* move the card up slightly */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* increase shadow for depth */
+}
+
+.info-card h5 {
+    color: #0385f7;
+}
+
+.table th, .table td {
+    color: #333;
+}
+
+.btn-custom {
+    background-color: #0f0201;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-image: url(sigma.jpeg);
+}
+
+/* List Group Item */
+.list-group-item {
+    border: none;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .section-header {
+        font-size: 1.2rem;
+    }
+
+    .info-card {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .btn-custom {
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .section-header {
+        font-size: 1rem;
+    }
+
+    .info-card {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .btn-custom {
+        padding: 6px 15px;
+    }
+    .profile-section p {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 10px;
+        display: inline-block;
+        max-width: 100%; /* Ensure it adapts to screen size */
+        box-sizing: border-box; /* Include padding in element width */
+    }
+    
+}
