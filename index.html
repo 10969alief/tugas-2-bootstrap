@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-</body background="">
     <section class="profile-section">
-        <div class="container">
-            <img src="alief.jpeg" alt="Foto" class="profile-image">
+        <div class="container text-center">
+            <img src="alief.jpeg" alt="Foto profil Muh. Alief Rezky Anisar" class="profile-image">
             <h2>Muh. Alief Rezky Anisar</h2>
             <p>Mahasigma di Kampus Universitas Negeri Makassar</p>
             <p><strong>Motto:</strong> "Dingin Tetapi Tidak Kejam"</p>
         </div>
     </section>
+
     <div class="container mt-5">
         <h3 class="section-header text-center">Tentang Saya</h3>
         <div class="row">
@@ -52,14 +52,13 @@
                     <h5>Pertemuan 2 MK Pemrograman Web</h5>
                     <p>Pada pertemuan kedua mata kuliah pemrograman web, kami ditugaskan untuk
                         menjelaskan jenis-jenis tag pada HTML yang sebelumnya sudah dibagikan pada pertemuan sebelumnya.
-                        Kebetulan saya mendapatkan tag HTML yang lumayan mudah yaitu tag time.
-                        Yang dimana penggunaannya itu untuk menjelaskan sebuah keterangan waktu tertentu.
-                        Tag ini juga dapat kita sertakan dengan atribut datetime untuk menerjemahkan tanggal atau waktu ke dalam format yang dapat dibaca oleh mesin.
-                        Untungnya Tag tersebut dengan mudah saya pahami, jadi semua berjalan lancar.<br></p>
+                        Kebetulan saya mendapatkan tag HTML yang lumayan mudah yaitu tag <code>&lt;time&gt;</code>.
+                        Tag ini digunakan untuk menjelaskan keterangan waktu tertentu dan dapat disertai atribut <code>datetime</code> untuk format yang dapat dibaca oleh mesin. Untungnya, tag ini dengan mudah saya pahami, jadi semua berjalan lancar.
                     </p>
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-md-6">
                 <div class="info-card">
@@ -71,18 +70,18 @@
                     </ul>
                 </div>
             </div>
-
             <div class="col-md-6">
                 <div class="info-card">
                     <h5>Daftar Dosen</h5>
                     <ul class="list-group">
                         <li class="list-group-item">M. Miftach Fakhri, S.kom., M.pd.</li>
-                        <li class="list-group-item">AlifyahNFH, S.pd., M.pd.</li>
+                        <li class="list-group-item">Alifyah NFH, S.pd., M.pd.</li>
                         <li class="list-group-item">Aulyah Zakilah Ifani, M.kom.</li>
                     </ul>
                 </div>
             </div>
         </div>
+
         <div class="info-card mt-4">
             <h5>Teman Dekat</h5>
             <div class="table-responsive">
@@ -129,12 +128,22 @@
                 </table>
             </div>
         </div>
+
         <div class="text-center mt-5">
-            <a href="#" class="btn btn-custom" id="contactButton">Info Lebih lanjut</a>
+            <button class="btn btn-custom" id="contactButton">Pesan buat Developer</button>
         </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script> 
+    <script>
+        document.getElementById('contactButton').addEventListener('click', function() {
+            let message = prompt("Masukkan Pesan Anda");
+            if (message) {
+                alert("Pesan Terkirim");
+            } else {
+                alert("Anda tidak memasukkan pesan.");
+            }
+        });
+    </script>
 </body>
 </html>
